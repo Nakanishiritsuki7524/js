@@ -7,4 +7,15 @@ img {
     width: 30vw;
     height: 30vw;
     border-radius:50%;
+    
   }
+
+table img{ overflow:hidden; }
+table img:hover{
+	transform:scale(1.1);
+	transition:0.3s;
+}
+a{
+  text-decoration: none;
+}
+

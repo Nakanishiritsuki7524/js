@@ -4,10 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./1025.css">
+    <script>
+        function f() {
+        var e = document.getElementById("AAA");
+        
+        var data = parseInt(e.innerHTML);
+        data++;
+        e.innerHTML = data;
+        }
+        
+        </script>
 </head>
 <body>
     <p><h2>意気込み</h2></p>
-    <div>頑張りました</div>
+    
+    
+    <div>頑張ります。</div>
+    <div id="AAA" onclick="f();">1</div>
 
 </body>
 </html>
