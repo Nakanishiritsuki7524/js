@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <script>
+        //コメントアウト
+        // /*
+        // 複数行分の
+        // コメントアウト
+        // ＊/
+        
+        // 変数について
+        let wareki = "平成";
+        console.log(wareki);
+        wareki ="令和";
+        console.log(wareki);
+        let abc ="abc";
+        console.log(abc);
+        console.log(abc);
+        // 　　　　　⇧
+        // エラー要素（abc要素はない）
+
+        let firstName ="Taro";
+        let lastName ="Yamada";
+        let fullName = firstName + lastName;
+        console.log(fullName);
+
+
+        let name ="seedkun";
+        let age ="20歳";
+        let gender ="男";
+        console.log(name);
+        console.log(age);
+        console.log(gender);
+
+
+
+        let weight=50;
+        console.log(weight);
+        console.log(typeof weight);
+
+        console.log(2+2);
+        console.log(2-2);
+        console.log(2*2);
+        console.log(2/2);
+        console.log(3%2)
+
+        let five=5;
+        let ten=10;
+        console.log(five*ten);
+
+
+
+        weight="50";
+        console.log(weight);
+        console.log(typeof weight);
+
+
+
+        let boolean=true;
+        console.log(typeof boolean);
+
+
+        let array=["一つ目のデータ","二つ目のデータ"]
+        console.log(array);
+
+        let a=5
+        let b=12
+        let c=13
+        let d=20
+        console.log(a+b+c);
+        console.log((a+b)*c);
+        console.log(b-a);
+        console.log(d/a);
+        console.log(d%c)
+
+        if(true){
+            console.log("条件がtrueだからお米を買いに行きます")
+        }
+        if(false){
+            console.log("条件がfalseだからお米を買いに行きません")
+        }
+        
+        let boo=true
+        if(boo){
+            console.log("条件がtureだからお米を買いに行きます")
+        }
+        if(!boo){
+            ("条件がfalseだからお米を買いに行きません")
+        }
+
+
+        let condition1=false;
+        let condition2=false;
+
+        if(condition1){
+            console.log("差し支えないので、お米を買いに行きます")
+        }else if(condition2){
+            console.log("買い物は差し支えるので、掃除機をかけます")
+        }else{
+            console.log("どちらも差し支えるので、子供の面倒を見ます")
+        }
+
+        let number=10
+        let string="10"
+
+        if(number==string){
+            console.log("numberとstringは等しい？")
+        }
+
+        if(number===string){
+            console.log("numberとstringは等しい？")
+        }else{
+            console.log("numberとstringは等しくない")
+        }
+
+        let satoHeight=160
+        let tanakaHeight=170
+        if(satoHeight<tanakaHeight&&tanakaHeight<180){
+            console.log("一つ目の条件がtrueかつ二つ目の条件がtrueだから実行します")
+        }
+        if(satoHeight<tanakaHeight&&tanakaHeight<160){
+            console.log("一つ目の条件がtrueかつ二つ目の条件がfalseだから実行しません")
+        }
+
+        if(satoHeight<tanakaHeight||tanakaHeight<160){
+            console.log("一つ目の条件がtrueだから実行します")
+        }
+
+        if(satoHeight>tanakaHeight||tanakaHeight<160){
+            console.log("いずれも条件がfalseだから実行しません")
+        }
+
+        let ichirou=23
+        let zirou=20
+        let saburou=17
+        let shirou=9
+
+        if(ichirou>=20){
+            console.log("条件がtrueの場合は２０歳以上ですと出力する")
+        }
+
+        if (zirou===20){
+            console.log("真の場合は２０歳ですと出力する")
+        }
+        if(saburou<20&&shirou<20){
+            console.log("真ならば二人とも２０歳以下である")
+        }
+
+
+        let condition3="料理"
+        switch(condition3){
+            case"買い物":
+            console.log("買いに行きます")
+            break
+
+            case"掃除機":
+            console.log("掃除機をかけます")
+            break
+
+            case"料理":
+            console.log("唐揚げ")
+            break
+
+        　　default:
+            console.log("子供の面倒を見ます")
+            break
+
+            case"トイレ":
+            case"お風呂":
+            console.log("お風呂掃除とトイレを掃除します")
+            break
+        }
+        let tanaka="7524"
+        switch(tanaka){
+            case"田中":
+            console.log("日本語")
+            break
+
+            case"tanaka":
+            console.log("英語")
+            break
+
+            case"田んぼ":
+            console.log("土地")
+            break
+
+            case"7524":
+            console.log("これが正解")
+            break
+
+            default:
+            console.log("全て違う場合")
+            break
+        }
+
+        for(let i=0; i<=10; i++){
+            console.log(i);
+        }
+
+        for(let i=9;i>=0;i--){
+            console.log(i);
+        }
+        let times=5
+        for(let i=0; i<=times; i++){
+            console.log(i)
+        }
+
+        let amo=0
+        for (let i=1; i<=100; i++){
+            amo+=i;
+
+            if(amo>1000){
+                console.log("ごうけいちが1000を超えるのは"+i+"の時です")
+                break
+            }
+
+
+        }
+        for (let i=1;i<=30;i++){
+            if(i%3===0){
+                continue;
+            }
+            console.log(i)
+        }
+
+        // let count=0
+        // while
+        // console.log(count)
+        //  count++
+
+        let ar=["一つ目の値","二つの値"]
+        console.log(ar)
+
+        console.log(ar[0])
+        console.log(ar[1])
+
+        ar[0]="一つ目の値更新しました"
+        console.log(ar)
+
+        ar.push("三つ目の値")
+
+        
+        let numbers=[1,5,10,15,20,25,30]
+
+        numbers.push(35)
+
+
+
+
+    </script>
+
+
+
+
+
+</body>
+</html>
